@@ -6,3 +6,28 @@ body {
 .center {
 	text-align: center;
 }
+
+.quote {
+	text-align: center;
+	font-style: italic;
+}
+
+a {
+}
+
+a:link {
+	color: #F82467;
+}
+
+a:visited {
+	color: #D11845;
+}
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}
