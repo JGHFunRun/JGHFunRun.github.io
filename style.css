@@ -1,17 +1,57 @@
+@charset "utf-8";
+
+/*@import "https://fonts.googleapis.com/css?family=Moirai%20One";
+@import "https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Shizuru&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Rock+3D&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap";*/
+@import "https://fonts.googleapis.com/css2?family=Pacifico&display=swap";
+
+@font-face {
+	font-family: "C059";
+	font-style: normal;
+	font-weight: normal;
+	src: url("/fonts/urw-base35-fonts/fonts/C059-Roman.otf") format("opentype"),
+	     url("/fonts/urw-base35-fonts/fonts/C059-Roman.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "C059";
+	font-style: italic;
+	font-weight: normal;
+	src: url("/fonts/urw-base35-fonts/fonts/C059-Italic.otf") format("opentype"),
+	     url("/fonts/urw-base35-fonts/fonts/C059-Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "C059";
+	font-style: normal;
+	font-weight: bold;
+	src: url("/fonts/urw-base35-fonts/fonts/C059-Bold.otf") format("opentype"),
+	     url("/fonts/urw-base35-fonts/fonts/C059-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "C059";
+	font-style: italic;
+	font-weight: bold;
+	src: url("/fonts/urw-base35-fonts/fonts/C059-BdIta.otf") format("opentype"),
+	     url("/fonts/urw-base35-fonts/fonts/C059-BdIta.ttf") format("truetype");
+}
+
 body {
 	background-color: #20232B;
 	color: lightgray;
+	font-family: "C059";
 }
 
-.center {
-	text-align: center;
+/* ***** /// basic elements /// ***** */
+h1 {
+	font-family: "Pacifico";
 }
 
-.quote {
-	text-align: center;
-	font-style: italic;
-}
-
+/* ***** /// <a> tags /// ***** */
 a {
 }
 
@@ -30,5 +70,15 @@ a:hover {
 }
 
 a:active {
+}
+
+/* ***** /// formatting classes /// ***** */
+.center {
+	text-align: center;
+}
+
+.quote {
+	text-align: center;
+	font-style: italic;
 }
 
