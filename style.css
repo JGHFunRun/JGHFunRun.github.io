@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* ***** /// Fonts /// ***** */
+
 /*@import "https://fonts.googleapis.com/css?family=Moirai%20One";
 @import "https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Shizuru&display=swap";
@@ -8,11 +10,16 @@
 @import "https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap";*/
 @import "https://fonts.googleapis.com/css2?family=Pacifico&display=swap";
 
+/* OTF seems to have a slightly lower bottom-line than TTF.
+ * TODO: Fix this with CSS
+ */
 @font-face {
 	font-family: "C059";
 	font-style: normal;
 	font-weight: normal;
-	src: url("/fonts/urw-base35-fonts/fonts/C059-Roman.otf") format("opentype"),
+	src: local("C059-Roman") format("opentype"),
+	     url("/fonts/urw-base35-fonts/fonts/C059-Roman.otf") format("opentype"),
+	     local("C059-Roman"),
 	     url("/fonts/urw-base35-fonts/fonts/C059-Roman.ttf") format("truetype");
 }
 
@@ -20,7 +27,9 @@
 	font-family: "C059";
 	font-style: italic;
 	font-weight: normal;
-	src: url("/fonts/urw-base35-fonts/fonts/C059-Italic.otf") format("opentype"),
+	src: local("C059-Italic") format("opentype"),
+	     url("/fonts/urw-base35-fonts/fonts/C059-Italic.otf") format("opentype"),
+	     local("C059-Italic"),
 	     url("/fonts/urw-base35-fonts/fonts/C059-Italic.ttf") format("truetype");
 }
 
@@ -28,7 +37,9 @@
 	font-family: "C059";
 	font-style: normal;
 	font-weight: bold;
-	src: url("/fonts/urw-base35-fonts/fonts/C059-Bold.otf") format("opentype"),
+	src: local("C059-Bold") format("opentype"),
+	     url("/fonts/urw-base35-fonts/fonts/C059-Bold.otf") format("opentype"),
+	     local("C059-Bold"),
 	     url("/fonts/urw-base35-fonts/fonts/C059-Bold.ttf") format("truetype");
 }
 
@@ -36,22 +47,27 @@
 	font-family: "C059";
 	font-style: italic;
 	font-weight: bold;
-	src: url("/fonts/urw-base35-fonts/fonts/C059-BdIta.otf") format("opentype"),
+	src: local("C059-BdIta") format("opentype"),
+	     url("/fonts/urw-base35-fonts/fonts/C059-BdIta.otf") format("opentype"),
+	     local("C059-BdIta"),
 	     url("/fonts/urw-base35-fonts/fonts/C059-BdIta.ttf") format("truetype");
 }
+
+
+/* ***** /// Basic elements /// ***** */
 
 body {
 	background-color: #20232B;
 	color: lightgray;
 	font-family: "C059";
+	font-size: 17px;
 }
 
-/* ***** /// basic elements /// ***** */
 h1 {
 	font-family: "Pacifico";
 }
 
-/* ***** /// <a> tags /// ***** */
+/* *** <a> tags *** */
 a {
 }
 
@@ -73,6 +89,7 @@ a:active {
 }
 
 /* ***** /// formatting classes /// ***** */
+
 .center {
 	text-align: center;
 }
@@ -80,5 +97,20 @@ a:active {
 .quote {
 	text-align: center;
 	font-style: italic;
+}
+
+img.emojimg {
+	height: 1em;
+	vertical-align: descent;
+}
+
+/* *** .article *** */
+body.article p {
+	width: 90%;
+}
+
+body.article p:first-of-type::first-letter {
+	font-size: 2em;
+	color: lavender;
 }
 
