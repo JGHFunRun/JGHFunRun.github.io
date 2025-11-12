@@ -1,5 +1,7 @@
+@charset "utf-8";
+
 /* OTF seems to have a slightly lower bottom-line than TTF.
- * TODO: Fix this with CSS
+ * TODO: Fix this with CSS?
  */
 @font-face {
 	font-family: "C059";
