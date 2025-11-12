@@ -10,49 +10,7 @@
 @import "https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap";*/
 @import "https://fonts.googleapis.com/css2?family=Pacifico&display=swap";
 
-/* OTF seems to have a slightly lower bottom-line than TTF.
- * TODO: Fix this with CSS
- */
-@font-face {
-	font-family: "C059";
-	font-style: normal;
-	font-weight: normal;
-	src: local("C059-Roman") format("opentype"),
-	     url("/fonts/urw-base35-fonts/fonts/C059-Roman.otf") format("opentype"),
-	     local("C059-Roman"),
-	     url("/fonts/urw-base35-fonts/fonts/C059-Roman.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "C059";
-	font-style: italic;
-	font-weight: normal;
-	src: local("C059-Italic") format("opentype"),
-	     url("/fonts/urw-base35-fonts/fonts/C059-Italic.otf") format("opentype"),
-	     local("C059-Italic"),
-	     url("/fonts/urw-base35-fonts/fonts/C059-Italic.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "C059";
-	font-style: normal;
-	font-weight: bold;
-	src: local("C059-Bold") format("opentype"),
-	     url("/fonts/urw-base35-fonts/fonts/C059-Bold.otf") format("opentype"),
-	     local("C059-Bold"),
-	     url("/fonts/urw-base35-fonts/fonts/C059-Bold.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "C059";
-	font-style: italic;
-	font-weight: bold;
-	src: local("C059-BdIta") format("opentype"),
-	     url("/fonts/urw-base35-fonts/fonts/C059-BdIta.otf") format("opentype"),
-	     local("C059-BdIta"),
-	     url("/fonts/urw-base35-fonts/fonts/C059-BdIta.ttf") format("truetype");
-}
-
+@import "/fonts/c059.css";
 
 /* ***** /// Basic elements /// ***** */
 
