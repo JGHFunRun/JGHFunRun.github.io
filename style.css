@@ -62,6 +62,10 @@ img.emojimg {
 	vertical-align: descent;
 }
 
+.accreditation {
+	font-style: italic;
+}
+
 /* *** .article *** */
 body.article p {
 	width: 90%;
@@ -71,4 +75,17 @@ body.article p:first-of-type::first-letter {
 	font-size: 2em;
 	color: lavender;
 }
+
+/* *** .hovernote *** */
+
+.hovernote {
+}
+
+.hovernote .hn-small {
+}
+
+.hovernote:hover .hn-small {
+}
+
+/* *** .glossing *** */
 
