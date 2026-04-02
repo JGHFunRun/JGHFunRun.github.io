@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-/* ***** /// Fonts /// ***** */
-
-/*@import "https://fonts.googleapis.com/css?family=Moirai%20One";
+/* ***** /// Fonts /// ***** */ /*@import "https://fonts.googleapis.com/css?family=Moirai%20One";
 @import "https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Shizuru&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Rock+3D&display=swap";
@@ -34,13 +32,17 @@ a:link {
 }
 
 a:visited {
-	color: #D11845;
+	/*color: #D11845;*/
+	/*color: #A71337; /*too dark?*/
+	color: #D11840;
 }
 
 a:focus {
 }
 
 a:hover {
+	/*color: #FF4080;*/
+	text-decoration: none;
 }
 
 a:active {
@@ -68,23 +70,57 @@ img.emojimg {
 
 /* *** .article *** */
 body.article p {
-	width: 90%;
+	width: 80%;
+}
+
+body.article ul {
+	width: 80%;
+}
+
+body.article ol {
+	width: 80%;
 }
 
 body.article p:first-of-type::first-letter {
-	font-size: 2em;
 	color: lavender;
+	font-size: 2.7em;
+	float: left;
+}
+
+body.article p:not(:first-of-type) {
+	text-indent: 1em;
 }
 
 /* *** .hovernote *** */
 
 .hovernote {
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	float: none;
 }
 
-.hovernote .hn-small {
+.hovernote > .hn-inline{
+	/*lavender doesn't stand out enough on regular-sized letters*/
+	color: #FFF0FF;
 }
 
-.hovernote:hover .hn-small {
+.hovernote:hover > .hn-inline{
+	color: gray;
+}
+
+.hovernote > .hn-small {
+	display: none;
+}
+
+.hovernote:hover > .hn-small {
+	z-index: 1;
+	position: absolute;
+	display: block;
+	bottom: 1em;
+	background-color: #272A30;
+	left: 0em;
+	font-size: 95%;
 }
 
 /* *** .glossing *** */
